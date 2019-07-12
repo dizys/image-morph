@@ -40,17 +40,15 @@ export class AffineDeformation {
     let B = new Matrix(0, 0, 0, 0);
 
     for (let i = 0; i < this.length; i++) {
-      B.add(this.pRelative[i].square().multiply(this.weights[i]));
+      B = B.add(this.pRelative[i].square().multiply(this.weights[i]));
     }
 
     B = B.inverse();
 
     for (let i = 0; i < this.length; i++) {
-      this.A[i] =
-        point
-          .subtract(pAverage)
-          .multiply(B)
-          .dot(this.pRelative[i]) * this.weights[i];
+      let a = point.subtract(pAverage);
+
+      this.A[i] = a.multiply(B).dot(this.pRelative[i]) * this.weights[i];
     }
 
     let result = qAverage;

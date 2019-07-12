@@ -36,8 +36,6 @@ export class Morpher {
     let warpedA = this.warperA.warp(this.sourceA.points, position);
     let warpedB = this.warperB.warp(this.sourceB.points, position);
 
-    console.log(warpedA);
-
     return this.blendImages(warpedA, warpedB, progress);
   }
 
