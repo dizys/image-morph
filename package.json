@@ -10,6 +10,12 @@
   "scripts": {
     "run-example": "parcel ./example/index.html --out-dir ./example/build"
   },
+  "files": [
+    "build",
+    "LICENSE",
+    "README.md",
+    "!*.js.map"
+  ],
   "devDependencies": {
     "@magicspace/configs": "^0.1.49",
     "parcel-bundler": "^1.12.3",
