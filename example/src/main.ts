@@ -412,13 +412,25 @@ async function main() {
     {imageData: dataB, points: pointsB},
   );
 
-  let result = morpher.morph(0.5);
+  let result = morpher.morph(0.4);
 
   let canvas = document.getElementById('output-canvas') as HTMLCanvasElement;
 
   let context = canvas.getContext('2d')!;
 
   context.putImageData(result, 0, 0);
+
+  // context.strokeStyle = '#ff0000';
+  // context.beginPath();
+  // context.arc(50, 50, 10, 0, 2 * Math.PI);
+  // context.stroke();
+
+  // for (let point of pointsA) {
+  //   context.strokeStyle = '#ff0000';
+  //   context.beginPath();
+  //   context.arc(point.x, point.y, 10, 0, 2 * Math.PI);
+  //   context.stroke();
+  // }
 }
 
 function buildPointsFromArray(arr: number[]): MorphPoint[] {
