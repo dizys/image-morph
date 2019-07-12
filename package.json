@@ -1,6 +1,6 @@
 {
   "name": "image-morph",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Seamless transition between images based on Canvas",
   "main": "build/index.js",
   "typings": "build/index.ts",
