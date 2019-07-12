@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Image Morph Example</title>
+    <style>
+      .source-images img {
+        width: 100px;
+      }
+
+      #output-canvas {
+        width: 900px;
+        height: 1600px;
+        transform: scale(0.4);
+        background-color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="source-images">
+      <img id="image-a" src="./images/a.jpg" />
+      <img id="image-b" src="./images/b.jpg" />
+    </div>
+    <canvas id="output-canvas"></canvas>
+    <script src="./src/main.ts"></script>
+  </body>
+</html>

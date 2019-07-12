@@ -1,0 +1,19 @@
+{
+  "name": "image-morph",
+  "version": "0.0.1",
+  "description": "Seamless transition between images based on Canvas",
+  "main": "build/index.js",
+  "typings": "build/index.ts",
+  "repository": "https://github.com/dizys/image-morph.git",
+  "author": "Dizy",
+  "license": "MIT",
+  "scripts": {
+    "run-example": "parcel ./example/index.html --out-dir ./example/build"
+  },
+  "devDependencies": {
+    "@magicspace/configs": "^0.1.49",
+    "parcel-bundler": "^1.12.3",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  }
+}

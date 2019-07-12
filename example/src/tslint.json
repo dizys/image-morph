@@ -1,0 +1,11 @@
+{
+  "extends": "@magicspace/configs/tslint-prettier",
+  "rules": {
+    "explicit-return-type": false,
+    "no-require-imports": false,
+    "no-var-requires": false,
+    "no-implicit-dependencies": false,
+    "prefer-template": false,
+    "no-invalid-template-strings": false
+  }
+}
