@@ -1,22 +1,14 @@
 export function createCanvas2dContext(
-  width?: number,
-  height?: number,
+  width: number,
+  height: number,
 ): CanvasRenderingContext2D {
-  let element = document.createElement('canvas');
+  let canvas = new OffscreenCanvas(width, height);
 
-  if (width) {
-    element.width = width;
-  }
-
-  if (height) {
-    element.height = height;
-  }
-
-  return element.getContext('2d')!;
+  return canvas.getContext('2d') as any;
 }
 
 export function createImageData(width: number, height: number): ImageData {
-  return createCanvas2dContext().createImageData(width, height);
+  return createCanvas2dContext(width, height).createImageData(width, height);
 }
 
 export function loadImageData(

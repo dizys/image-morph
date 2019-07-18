@@ -1,3 +1,4 @@
-export * from './blender';
-export * from './warper';
-export * from './utils';
+export * from './morpher';
+export * from './face-triangles';
+export * from './transform-filter';
+
